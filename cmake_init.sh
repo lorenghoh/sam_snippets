@@ -1,5 +1,5 @@
 #!/bin/bash
-./cmake_config.sh 
+./cmake_config.sh
 
 cp -a $SAM_DIR/$CASE .
 cp -a $SAM_DIR/CaseName .
