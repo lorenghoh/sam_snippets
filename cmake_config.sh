@@ -5,7 +5,5 @@ export FC=mpifort
 export CXX=icpc
 
 # SAM_CMAKE source location
-SAM_DIR = "/home/gunho/SAM"
-CASE = "BOMEX"
-
-export SAM = $SAM_DIR
+export SAM="/home/gunho/SAM"
+export CASE="BOMEX"
