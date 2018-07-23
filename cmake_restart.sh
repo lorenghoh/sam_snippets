@@ -6,7 +6,15 @@ if [ -z "$SAM" ]; then
 	echo "SAM ENV VAR NOT FOUND"
 else
 	# Check if leftover files exist
-	cache=( "CMakeFiles" "lib" "UTIL" "CMakeCache.txt" "include_fortran" "Makefile" "SAM_CMAKE" "cmake_install.cmake" )
+	cache=( "CMakeCache.txt"
+		"CMakeFiles" 
+		"cmake_install.cmake"
+		"include_fortran" 
+		"lib"
+		"Makefile" 
+		"RUNDATA"
+		"SAM_CMAKE" 
+		"UTIL" )
 	for file in "${cache[@]}"
 	do
 		if [ -e $file ]; then 
