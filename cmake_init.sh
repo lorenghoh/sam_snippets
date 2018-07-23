@@ -1,13 +1,5 @@
 #!/bin/bash
-export CC=mpicc
-export CXX=mpicxx
-export FC=mpifort
-
-# Location of SAM to be built
-SAM_DIR="/home/loh/SAM/"
-CASE="BOMEX"
-
-export SAM=$SAM_DIR
+./cmake_config.sh
 
 cp -a $SAM_DIR/$CASE .
 cp -a $SAM_DIR/CaseName .
