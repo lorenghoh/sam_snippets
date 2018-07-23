@@ -1,16 +1,17 @@
 #!/bin/bash
-./cmake_config.sh 
+dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+. $dir/cmake_config.sh
 
-cp -a $SAM_DIR/$CASE .
-cp -a $SAM_DIR/CaseName .
+cp -a $SAM/$CASE .
+cp -a $SAM/CaseName .
 
 mkdir -p RESTART
 mkdir -p OUT_3D
 mkdir -p OUT_STAT
 
-echo "Copied settings from $SAM_DIR"
+echo "Copied settings from $SAM"
 
-cmake $SAM_DIR
+cmake $SAM
 if [ $? -eq 0 ]; then
 	make
 else 
