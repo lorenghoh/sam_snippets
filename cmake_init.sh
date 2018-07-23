@@ -1,10 +1,10 @@
 #!/bin/bash
-export CC=icc
-export CXX=icpc
+export CC=mpicc
+export CXX=mpicxx
 export FC=mpifort
 
 # Location of SAM to be built
-SAM_DIR="/home/gunho/SAM/"
+SAM_DIR="/home/loh/SAM/"
 CASE="BOMEX"
 
 export SAM=$SAM_DIR
