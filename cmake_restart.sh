@@ -1,4 +1,5 @@
 #!/bin/bash
+./cmake_config.sh
 
 set -e
 
