@@ -7,14 +7,15 @@ if [ -z "$SAM" ]; then
 	exit 1
 else
 	# Check if leftover files exist
-	cache=( "CMakeFiles" 
-		"lib" 
-		"UTIL" 
-		"CMakeCache.txt" 
+	cache=( "CMakeCache.txt"
+		"CMakeFiles" 
+		"cmake_install.cmake"
 		"include_fortran" 
+		"lib"
 		"Makefile" 
+		"RUNDATA"
 		"SAM_CMAKE" 
-		"cmake_install.cmake" )
+		"UTIL" )
 	for file in "${cache[@]}"
 	do
 		if [ -e $file ]; then 
