@@ -3,9 +3,9 @@
 # SLURM script for a multi-step job on a Compute Canada cluster. 
 # ---------------------------------------------------------------------
 #SBATCH --account=def-paustin
-#SBATCH --nodes=4
+#SBATCH --nodes=3
 #SBATCH --ntasks-per-node=32
-#SBATCH --time=2-12:00:00
+#SBATCH --time=3-00:00:00
 #SBATCH --mem=0M
 # ---------------------------------------------------------------------
 echo "Current working directory: `pwd`"
@@ -21,4 +21,4 @@ export CXX=icpc
 export FC=mpifort
 
 # Run your simulation step here...
-srun /scratch/gunho/BOMEX_12HR/SAM_CMAKE
+srun /scratch/gunho/BOMEX_BOWL/SAM_CMAKE
