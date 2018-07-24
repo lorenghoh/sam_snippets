@@ -1,6 +1,6 @@
 #!/bin/bash
 dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-#. $dir/cmake_config.sh
+. $dir/cmake_config.sh
 
 if [ -z "$SAM" ]; then 
 	echo "SAM dir not found"
