@@ -1,9 +1,9 @@
 #!/bin/bash
 # Compilers
-export CC=icc
+export CC=mpicc
 export FC=mpifort
-export CXX=icpc
+export CXX=mpicxx
 
 # SAM_CMAKE source location
-export SAM="/home/gunho/SAM"
+export SAM="/home/loh/SAM"
 export CASE="BOMEX"
