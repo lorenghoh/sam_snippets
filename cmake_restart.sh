@@ -15,7 +15,10 @@ else
 		"Makefile" 
 		"RUNDATA"
 		"SAM_CMAKE" 
-		"UTIL" )
+		"UTIL"
+		"OUT_STAT"
+		"OUT_3D"
+		"RESTART")
 	for file in "${cache[@]}"
 	do
 		if [ -e $file ]; then 
