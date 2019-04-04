@@ -27,6 +27,10 @@ else
 	done
 	echo "Removed leftover files, restarting..."
 
+	mkdir -p RESTART
+	mkdir -p OUT_3D
+	mkdir -p OUT_STAT
+
 	cmake $SAM
 	make
 fi
