@@ -1,8 +1,8 @@
 #!/bin/bash
 # Compilers
-export CC=icc
+export CC=gcc
+export CXX=g++
 export FC=mpifort
-export CXX=icpc
 
 # SAM_CMAKE source location
 export SAM="/home/gunho/SAM"
