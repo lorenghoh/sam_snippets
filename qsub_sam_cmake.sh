@@ -16,9 +16,9 @@ echo "Job Array ID / Job ID: $SLURM_ARRAY_JOB_ID / $SLURM_JOB_ID"
 echo "This is job $SLURM_ARRAY_TASK_ID out of $SLURM_ARRAY_TASK_COUNT jobs."
 echo ""
 # ---------------------------------------------------------------------
-export CC=icc
-export CXX=icpc
-export FC=mpifort
+export CC=gcc
+export CXX=g++
+export FC=gfortran
 
 # Run your simulation step here...
-srun /scratch/gunho/BOMEX_BOWL/SAM_CMAKE
+srun /scratch/gunho/BOMEX_24HR_gcc/SAM_CMAKE
