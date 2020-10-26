@@ -1,1 +1,2 @@
-salloc --ntasks=16 --mem-per-cpu=4G --time=3:00:00 --account=def-paustin
+source ~/pyenv/stats/bin/activate
+salloc --nodes=1 --ntasks=1 --cpus-per-node=32 --mem=0 --time=3:00:00 --account=def-paustin
