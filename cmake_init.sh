@@ -3,8 +3,8 @@ dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 . $dir/cmake_config.sh
 
 if [ -z "$SAM" ]; then 
-	echo "SAM dir not found"
-	exit 1
+    echo "SAM dir not found"
+    exit 1
 fi
 
 cp -a $SAM/$CASE .
@@ -14,11 +14,11 @@ mkdir -p RESTART
 mkdir -p OUT_3D
 mkdir -p OUT_STAT
 
-echo "Copied settings from $SAM"
+echo "Copied case parameters from $SAM"
 
 cmake $SAM
 if [ $? -eq 0 ]; then
-	make
+    make
 else 
-	echo CMAKE FAIL
+    echo CMAKE FAIL
 fi
